@@ -1,66 +1,94 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    <!-- Meta para cor da barra de navegação no Chrome e Safari (opcional) -->
-    <meta name="theme-color" content="#0060c6">
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <link rel="stylesheet" href="/CSS/style.css">
+    <link rel="stylesheet" href="/CSS/navbar.css">   
     
-    <!-- Favicon padrão (16x16 e 32x32) -->
-    <link rel="icon" href="ASSETS/IMAGES/DNC-favicon-32x32.png" type="image/png" sizes="32x32">
-    <link rel="icon" href="ASSETS/IMAGES/DNC-favicon-16x16.png" type="image/png" sizes="16x16">
-
-    <link rel="stylesheet" href="CSS/normalize.css">
-    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="icon" type="image/svg+xml" href='/ASSETS/IDENTITY/favicon-32x32.svg' sizes='32x32'>
+    <link rel="apple-touch-icon" href="/ASSETS/IDENTITY/favicon-180x180.png" sizes="180x180">
+    
     <title>DNC Equipamentos: coletes salva-vidas e uniformes empresariais</title>
 </head>
+
 <body>
-    <header>
-        <nav aria-label="Navegação principal">
-            <div class="nav-container">
-                <a class="logo-topo" href="#"><img class="logotipo" src="ASSETS/IMAGES/DNC-horizontal.svg" alt="logotipo DNC Equipamentos"> </a>
-                
-                <ul>
-                    <!-- <li><a href="#">home</a></li> -->
-                    <!-- <li><a href="#">menu1</a></li> -->
-                    <li class="brand"><a href="https://www.instagram.com/dnc_equipseg" target="_blank">instagram</a></li>
-                </ul>
-            </div>                 
-        </nav>
+
+    <!-- NAVBAR -->
+    <nav>
+    
+        <!-- DESKTOP -->
+        <ul>
+            <li><a href="#"><img class="logo-topo" src="/ASSETS/IDENTITY/DNC-horizontal.svg" alt="logotipo 2P"></a></li>
+            <li class="hideOnMobile"><a href="/index.html">Home</a></li>
+            <li class="hideOnMobile"><a href="#">Coletes Salva-Vidas</a></li>
+            <li class="hideOnMobile"><a href="#">Uniformes</a></li>
+            <li class="hideOnMobile"><a href="#">Contato</a></li>
+            <li class="hideOnMobile"><a href="#"><img class="icon" src="/ASSETS/ICONS/instagram-blk.svg" aria-label="acessar nosso instagram" alt="botão instagram"></a></li>
+            <li class="burger" onclick=showSidebar()><a href="#"><img class="icon" src="/ASSETS/ICONS/burger-black.svg" aria-label="botão abrir menu" alt="botão abrir menu"></a></li>
+        </ul>
+        
+        <!-- MOBILE SIDEBAR -->
+        <ul class="sidebar">
+            <li onclick=hideSidebar()><a href="#"><img class="icon" src="/ASSETS/ICONS/X-black.svg" aria-label="botão fechar menu" alt="botão fechar menu"></a></li>
+            <li onclick=hideSidebar()><a href="#">Home</a></li>
+            <li onclick=hideSidebar()><a href="#">Coletes Salva-Vidas</a></li>
+            <li onclick=hideSidebar()><a href="#">Uniformes</a></li>
+            <li onclick=hideSidebar()><a href="#">Contato</a></li>
+            <li onclick=hideSidebar()><a href="#"><img class="logo-topo" src="/ASSETS/ICONS/instagram-blk.svg" aria-label="acessar nosso instagram" alt="botão instagram"></a></li>
+        </ul>
+        
+        <!-- BOTÃO WHATSAPP -->
         <a
-              href="https://wa.me/5599999999999?text=Olá!%20Gostaria%20de%20saber%20mais..."
-              class="whatsapp-float"
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="Fale conosco no WhatsApp"
-            >
-              <p>whatsapp</p>
-            </a>
-    </header>
+        href="https://wa.me/5599999999999?text=Olá!%20Gostaria%20de%20saber%20mais..."
+        class="whatsapp-float"
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="Fale conosco no WhatsApp"
+        >
+            <p>whatsapp</p>
+        </a>
+    
+    </nav>
     
     <main>
-        <section class="hero" aria-label="Seção principal de destaque">
+    
+        <!-- HERO-SECTION -->
+        <section class="hero-section" id="hero-section" aria-label="Seção principal de destaque">
             <div class="hero-content">
                 <div class="hero-text">
-                    <h1>Coletes salva-vidas e uniformes profissionais na medida da sua missão</h1>
-                    <p>Segurança, conforto, alto desempenho e identidade para sua equipe, com padrão de excelência.</p>
+                    <h1>Coletes salva-vidas e uniformes profissionais na medida da sua necessidade</h1>
+                    <p>Segurança, conforto, alto desempenho e identidade para sua equipe, com padrão de excelência certificado.</p>
                     <div class="cta-hero">
                         <a href="#" class="cta-main">Faça seu pedido</a>
                         <a href="#" class="cta-main cta-secondary">Baixe nosso catálogo</a>
                     </div>
                 </div>
-                <img class="hero-image" src="./ASSETS/IMAGES/uniformes-hero.png" alt="Imagem de coletes salva-vidas e uniformes profissionais">
+                
+                <div class="hero-image-container">
+                    <img class="hero-image" src="./ASSETS/IMAGES/uniformes-hero.png" alt="Imagem de coletes salva-vidas e uniformes profissionais">
+                </div>
             </div>
         </section>
-                
+        
+        <!-- SEÇÃO DE CLIENTES -->
+    
     </main>
     
-    <footer>
-    </footer>
+    <script>
+        function showSidebar() {
+            const sidebar = document.querySelector('.sidebar');
+            sidebar.style.display = 'flex';
+        }
+        
+        function hideSidebar() {
+            const sidebar = document.querySelector('.sidebar');
+            sidebar.style.display = 'none';
+        }
     
-    <script src="script.js"></script>
+    </script>
+    
 </body>
 </html>
