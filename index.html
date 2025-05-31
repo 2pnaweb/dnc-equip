@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="./CSS/style.css">
     <link rel="stylesheet" href="./CSS/navbar.css">   
     
-    <link rel="icon" type="image/svg+xml" href="./ASSETS/IDENTITY/favicon-32x32.svg" sizes='32x32'>
+    <link rel="icon" type="image/svg+xml" href="./ASSETS/IDENTITY/favicon-32x32.svg" sizes="32x32">
     <link rel="apple-touch-icon" href="./ASSETS/IDENTITY/favicon-180x180.png" sizes="180x180">
     
     <title>DNC Equipamentos: coletes salva-vidas e uniformes empresariais</title>
@@ -21,35 +21,24 @@
     
         <!-- DESKTOP -->
         <ul>
-            <li><a href="#"><img class="logo-topo" src="./ASSETS/IDENTITY/DNC-horizontal.svg" alt="logotipo 2P"></a></li>
+            <li><a href="#"><img class="logo-topo" src="/ASSETS/IDENTITY/DNC-horizontal.svg" alt="logotipo 2P"></a></li>
             <li class="hideOnMobile"><a href="/index.html">Home</a></li>
             <li class="hideOnMobile"><a href="#">Coletes Salva-Vidas</a></li>
             <li class="hideOnMobile"><a href="#">Uniformes</a></li>
             <li class="hideOnMobile"><a href="#">Contato</a></li>
-            <li class="hideOnMobile"><a href="#"><img class="icon" src="./ASSETS/ICONS/instagram-blk.svg" aria-label="acessar nosso instagram" alt="botão instagram"></a></li>
-            <li class="burger" onclick=showSidebar()><a href="#"><img class="icon" src="./ASSETS/ICONS/burger-black.svg" aria-label="botão abrir menu" alt="botão abrir menu"></a></li>
+            <li class="hideOnMobile"><a href="#"><img class="icon" src="/ASSETS/ICONS/instagram-blk.svg" aria-label="acessar nosso instagram" alt="botão instagram"></a></li>
+            <li class="burger" onclick=showSidebar()><a href="#"><img class="icon" src="/ASSETS/ICONS/burger-black.svg" aria-label="botão abrir menu" alt="botão abrir menu"></a></li>
         </ul>
         
         <!-- MOBILE SIDEBAR -->
         <ul class="sidebar">
-            <li onclick=hideSidebar()><a href="#"><img class="icon" src="./ASSETS/ICONS/X-black.svg" aria-label="botão fechar menu" alt="botão fechar menu"></a></li>
+            <li onclick=hideSidebar()><a href="#"><img class="icon" src="/ASSETS/ICONS/X-black.svg" aria-label="botão fechar menu" alt="botão fechar menu"></a></li>
             <li onclick=hideSidebar()><a href="#">Home</a></li>
             <li onclick=hideSidebar()><a href="#">Coletes Salva-Vidas</a></li>
             <li onclick=hideSidebar()><a href="#">Uniformes</a></li>
             <li onclick=hideSidebar()><a href="#">Contato</a></li>
-            <li onclick=hideSidebar()><a href="#"><img class="logo-topo" src="./ASSETS/ICONS/instagram-blk.svg" aria-label="acessar nosso instagram" alt="botão instagram"></a></li>
+            <li onclick=hideSidebar()><a href="#"><img class="icon" src="/ASSETS/ICONS/instagram-blk.svg" aria-label="acessar nosso instagram" alt="botão instagram"></a></li>
         </ul>
-        
-        <!-- BOTÃO WHATSAPP -->
-        <a
-        href="https://wa.me/5599999999999?text=Olá!%20Gostaria%20de%20saber%20mais..."
-        class="whatsapp-float"
-        target="_blank"
-        rel="noopener noreferrer"
-        aria-label="Fale conosco no WhatsApp"
-        >
-            <p>whatsapp</p>
-        </a>
     
     </nav>
     
@@ -68,12 +57,206 @@
                 </div>
                 
                 <div class="hero-image-container">
-                    <img class="hero-image" src="./ASSETS/IMAGES/uniformes-hero.png" alt="Imagem de coletes salva-vidas e uniformes profissionais">
+                    <img class="hero-image" src="./ASSETS/IMAGES/hero-uniformes.png" alt="Imagem de coletes salva-vidas e uniformes profissionais">
                 </div>
             </div>
         </section>
         
         <!-- SEÇÃO DE CLIENTES -->
+        <section class="section" id="clientes" aria-label="Seção de clientes">
+            <div class="container no-padding">
+                <h2>Nossos Principais Clientes</h2>
+                
+                <Div class="clientes">
+                    <img src="./ASSETS/CLIENTES/1-byd.png" alt="logo cliente BYD">
+                    <img src="./ASSETS/CLIENTES/2-gree.png" alt="logo cliente GREE">
+                    <img src="./ASSETS/CLIENTES/3-kawasaki.png" alt="logo cliente KAWASAKI">
+                    <img src="./ASSETS/CLIENTES/4-tpv.png" alt="logo cliente TPV">
+                    <img src="./ASSETS/CLIENTES/5-grafisa.png" alt="logo cliente GRAFISA">
+                    <img src="./ASSETS/CLIENTES/6-knauf.png" alt="logo cliente KNAUF INDUSTRIES">
+                    <img src="./ASSETS/CLIENTES/7-verde.png" alt="logo cliente VERDE BRASIL">
+                </Div>
+            </div>        
+        </section>
+        
+        <!-- SEÇÃO COLETES -->
+        <section class="section coletes-salva-vidas" id="salva-vidas" aria-label="Seção de coletes salva-vidas">
+            <div class="container">
+                <h2>Nossos Coletes Salva-vidas</h2>
+                
+                <Div class="salva-vidas">
+                    <div class="card-colete">
+                        <img src="./ASSETS/IMAGES/jaleco-classe-iii.webp" alt="Colete salva-vidas Canga Classe III">
+                        <div class="colete-descricao">
+                            <h4>Colete Salva-Vidas</h4>
+                            <h3>Amazônia Classe III Modelo Canga</h3>
+                            <p>Colete salva-vidas homologado pela Marinha do Brasil, nº 211.004/2016, destinado ao uso em águas abrigadas, como rios, lagos e represas.</p>
+                            <a href="#" class="cta-main cta-produtos">Faça seu pedido</a>
+                        </div>
+                    </div>
+                    
+                    <div class="card-colete">
+                        <img src="./ASSETS/IMAGES/jaleco-refletivo-classe-iv.webp" alt="Colete salva-vidas tipo Jaqueta">
+                        <div class="colete-descricao">
+                            <h4>Colete Salva-Vidas</h4>
+                            <h3>Equipamento Auxiliar de Flutuação</h3>
+                            <p>Indicado para embarcações em áreas de águas calmas e abrigadas, que não exigem equipamentos homologados pela Marinha.</p>
+                            <a href="#" class="cta-main cta-produtos">Faça seu pedido</a>
+                        </div>
+                    </div>
+                </Div>
+            </div>        
+        </section>
+        
+        <!-- SEÇÃO DIFERENCIAIS -->
+        <section class="section" id="diferenciais" aria-label="Seção de diferenciais">
+            <div class="container">
+                <h2>Nossos Diferenciais</h2>
+                
+                <Div class="grid-diferenciais">
+                    <div class="card-diferencial">
+                        <img src="./ASSETS/ICONS/dif-iso.png" alt="logo cliente BYD">
+                        <h3>Certificação ISO 9001:2015</h3>
+                    </div>
+                    <div class="card-diferencial">
+                        <img src="./ASSETS/ICONS/dif-marinha.png" alt="logo cliente BYD">
+                        <h3>Prod. homol. pela Marinha do Brasil</h3>
+                    </div>
+                    <div class="card-diferencial">
+                        <img src="./ASSETS/ICONS/dif-atendimento.png" alt="logo cliente BYD">
+                        <h3>Atendimento personalizado</h3>
+                    </div>
+                    <div class="card-diferencial">
+                        <img src="./ASSETS/ICONS/dif-custo.png" alt="logo cliente BYD">
+                        <h3>Melhor custo-benefício</h3>
+                    </div>
+                    <div class="card-diferencial">
+                        <img src="./ASSETS/ICONS/dif-mdo.png" alt="logo cliente BYD">
+                        <h3>Mão de obra especializada</h3>
+                    </div>
+                    <div class="card-diferencial">
+                        <img src="./ASSETS/ICONS/dif-maquinas.png" alt="logo cliente BYD">
+                        <h3>Máquinário moderno</h3>
+                    </div>
+                    <div class="card-diferencial">
+                        <img src="./ASSETS/ICONS/dif-tecidos.png" alt="logo cliente BYD">
+                        <h3>Tecidos </br> premium</h3>
+                    </div>
+                    
+                </Div>
+            </div>
+        </section>
+        
+        <!-- SEÇÃO UNIFORMES -->
+        <section class="section section-uniformes" id="uniformes" aria-label="Seção de uniformes">
+            <div class="container">
+                <h2>Nossas Linhas de uniformes</h2>
+                
+                <Div class="div-uniformes">
+                    <div class="card-uniforme">
+                        <img src="./ASSETS/IMAGES/uni-admin.png" alt="Colete salva-vidas Canga Classe III">
+                        <div class="card-descricao">
+                            <h3>Linha Administrativa</h3>
+                            <p>Sofisticação que valoriza sua marca no escritório.</p>
+                            <a href="#" class="cta-main cta-produtos">Faça seu pedido</a>
+                        </div>
+                    </div>
+                    
+                    <div class="card-uniforme">
+                        <img src="./ASSETS/IMAGES/uni-hospitalar.png" alt="Colete salva-vidas Canga Classe III">
+                        <div class="card-descricao">
+                            <h3>Linha Hospitalar</h3>
+                            <p>Conforto e proteção para cuidar de vidas.</p>
+                            <a href="#" class="cta-main cta-produtos">Faça seu pedido</a>
+                        </div>
+                    </div>
+                    
+                    <div class="card-uniforme">
+                        <img src="./ASSETS/IMAGES/uni-operacional.png" alt="Colete salva-vidas Canga Classe III">
+                        <div class="card-descricao">
+                            <h3>Linha Operacional</h3>
+                            <p>Força e segurança para quem atua na linha de frente.</p>
+                            <a href="#" class="cta-main cta-produtos">Faça seu pedido</a>
+                        </div>
+                    </div>
+                    
+                    <div class="card-uniforme">
+                        <img src="./ASSETS/IMAGES/uni-antiestático.png" alt="Colete salva-vidas Canga Classe III">
+                        <div class="card-descricao">
+                            <h3>Linha Antiestática</h3>
+                            <p>Tecnologia e proteção para ambientes sensíveis.</p>
+                            <a href="#" class="cta-main cta-produtos">Faça seu pedido</a>
+                        </div>
+                    </div>
+                    
+                    <div class="card-uniforme">
+                        <img src="./ASSETS/IMAGES/uni-servicos.png" alt="Colete salva-vidas Canga Classe III">
+                        <div class="card-descricao">
+                            <h3>Linha de Serviços</h3>
+                            <p>Estilo e praticidade para quem atende com excelência.</p>
+                            <a href="#" class="cta-main cta-produtos">Faça seu pedido</a>
+                        </div>
+                    </div>
+                    
+                    <div class="card-uniforme">
+                        <img src="./ASSETS/IMAGES/uni-tshirt-polo.png" alt="Colete salva-vidas Canga Classe III">
+                        <div class="card-descricao">
+                            <div>
+                                <h3>Polos e T-shirts</h3>
+                                <p>Básicos que vestem bem e reforçam sua identidade.</p>
+                            </div>
+                            <a href="#" class="cta-main cta-produtos">Faça seu pedido</a>
+                        </div>
+                    </div>
+                    
+                </Div>
+                
+            </div>
+        </section>
+        
+        <!-- SEÇÃO CONTATO -->
+
+        <section class="section catalog-form">
+            <div class="container container-contato">
+                <div class="contato-wrapper"></div>
+                    <h2>Solicite nosso catálogo</h2>
+                    <form id="downloadForm">
+                        <!-- <label>Nome*</label> -->
+                        <input type="text" name="nome" id="nome" placeholder="Seu nome e sobrenome" required />
+
+                        <!-- <label>Whatsapp*</label> -->
+                        <input type="text" name="whatsapp" id="whatsapp" placeholder="Seu whatsapp" required />
+
+                        <!-- <label>Email*</label> -->
+                        <input type="email" name="email" id="email" placeholder="Seu e-mail" required />
+
+                        <!-- <label>Nome da empresa</label> -->
+                        <input type="text" name="empresa" id="empresa" placeholder="Qual sua empresa?" />
+
+                        <button type="submit">Solicite nosso catálogo</button>
+                    </form>
+                </div>
+                
+              <!-- Modal -->
+                <div class="modal" id="modal">
+                    <div class="modal-content">
+                      <p>Obrigado por entrar em contato e baixar nosso catálogo!</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        
+        <!-- BOTÃO WHATSAPP -->
+        <a
+        href="https://wa.me/5599999999999?text=Olá!%20Gostaria%20de%20saber%20mais..."
+        class="whatsapp-float"
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="Fale conosco no WhatsApp"
+        >
+            <img class="icon" src="/ASSETS/ICONS/whatsapp-wht.svg" aria-label="acessar nosso whatsapp" alt="botão whatsapp">
+        </a>
     
     </main>
     
@@ -88,7 +271,74 @@
             sidebar.style.display = 'none';
         }
     
+        // Formulário de download do catálogo
+        
+        const form = document.getElementById('downloadForm');
+  const modal = document.getElementById('modal');
+
+  form.addEventListener('submit', function (e) {
+    e.preventDefault();
+
+    // Resetar erros anteriores
+    const inputs = form.querySelectorAll('input');
+    inputs.forEach(input => input.classList.remove('error'));
+
+    const nome = document.getElementById('nome');
+    const whatsapp = document.getElementById('whatsapp');
+    const email = document.getElementById('email');
+
+    let valid = true;
+
+    // Validação nome
+    if (nome.value.trim() === '') {
+      nome.classList.add('error');
+      nome.focus();
+      valid = false;
+      return;
+    }
+
+    // Validação whatsapp (ex: (11) 91234-5678)
+    const telPattern = /^\(\d{2}\)\s9\d{4}-\d{4}$/;
+    if (!telPattern.test(whatsapp.value)) {
+      whatsapp.classList.add('error');
+      whatsapp.focus();
+      valid = false;
+      return;
+    }
+
+    // Validação email simples
+    const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!emailPattern.test(email.value)) {
+      email.classList.add('error');
+      email.focus();
+      valid = false;
+      return;
+    }
+
+    // Se tudo estiver válido
+    modal.style.display = 'flex';
+    setTimeout(() => {
+      modal.style.display = 'none';
+      window.open('./FILES/DNC-catalogo.pdf', '_blank');
+      form.reset();
+    }, 2500);
+  });
+
+  // Máscara para WhatsApp
+  document.getElementById('whatsapp').addEventListener('input', function (e) {
+    let x = e.target.value.replace(/\D/g, '').slice(0, 11);
+    if (x.length >= 11) {
+      e.target.value = `(${x.slice(0, 2)}) 9${x.slice(3, 7)}-${x.slice(7, 11)}`;
+    } else if (x.length > 6) {
+      e.target.value = `(${x.slice(0, 2)}) 9${x.slice(3, x.length)}`;
+    } else if (x.length > 2) {
+      e.target.value = `(${x.slice(0, 2)}) ${x.slice(2)}`;
+    } else {
+      e.target.value = x;
+    }
+  });
     </script>
+    
     
 </body>
 </html>
