@@ -551,4 +551,12 @@ p {
         min-width: 40vw;
         min-height: 35vw;
     }
+    
+    .container-contato {
+        max-width: 90vw;
+        background-color: #f0f0f0;
+        padding: 2rem 4rem;
+        margin: 6rem auto;
+        border-radius: var(--raio-longo);
+    }
 }
