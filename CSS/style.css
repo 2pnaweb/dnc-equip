@@ -31,13 +31,16 @@
 
 html {
     font-size: 16px;
-    scroll-behavior: smooth;
 }
 
 body {
     min-height: 100%;
     font-family: var(--fonte-principal);
     font-weight: 400;
+}
+
+html, body {
+    scroll-behavior: smooth;
 }
 
 a {
@@ -195,7 +198,7 @@ p {
     justify-content: center;
     align-items: center;
     
-    border: solid 1px yellow;
+    /* border: solid 1px yellow; */
 }
 
 
