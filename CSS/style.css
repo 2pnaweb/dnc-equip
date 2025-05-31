@@ -399,17 +399,6 @@ p {
 
 /* SEÇÃO CONTATO ===================================================================================== */ 
 
-/* .catalog-form {
-  background: linear-gradient(135deg, #add8e6, #87c5e6);
-  background-color:#e0e0e0;
-  padding: 40px 20px;
-  max-width: 600px;
-  margin: 0 auto;
-  border-radius: 10px;
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
-  font-family: Arial, sans-serif;
-} */
-
 .container-contato {
     max-width: 700px;
     background-color: #f0f0f0;
@@ -550,6 +539,10 @@ p {
     .card-diferencial {
         min-width: 40vw;
         min-height: 35vw;
+    }
+    
+    .card-uniforme {
+        width: 80vw;
     }
     
     .container-contato {
