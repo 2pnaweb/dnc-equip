@@ -555,8 +555,8 @@ p {
     .container-contato {
         max-width: 90vw;
         background-color: #f0f0f0;
-        padding: 2rem 4rem;
-        margin: 6rem auto;
+        padding: 5vw;
+        margin: 10vw auto;
         border-radius: var(--raio-longo);
     }
 }
