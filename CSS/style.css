@@ -540,10 +540,10 @@ p {
         justify-self: center;
     }
     
-    /* .clientes img {
+    .clientes img {
         width: 35vw;
         height: auto;
-    } */
+    }
     
      .grid-diferenciais {
         max-width: 80vw;
