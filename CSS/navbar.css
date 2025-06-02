@@ -23,11 +23,21 @@ nav li {
     height: 4rem;
 }
 
+nav .destaque {
+    background-color: var(--cor-secundaria);
+    height: 3rem;
+    border-radius: var(--raio-curto);
+}
+
+nav .destaque a {
+    color: white;
+}
+
 nav a {
     display: flex;
     align-items: center;
     height: 100%;
-    padding: 0 1.75rem;
+    padding: 0 1rem;
     color: black;
     transition: all 0.15s ease;
 }
@@ -43,7 +53,7 @@ nav li:first-child {
 .logo-topo {
     display: flex;
     align-items: center;
-    height: 1.5rem;
+    height: 1.25rem;
 }
 
 .icon {
@@ -61,7 +71,6 @@ nav li:first-child {
     
     flex-direction: column;
     justify-content: flex-start;
-    /* align-items: left; */
     
     font-size: 1.25rem;
     
@@ -73,7 +82,7 @@ nav li:first-child {
     z-index: 999;
     
     backdrop-filter: blur(10px);
-    background-color: rgba(255, 255, 255, 0.90);
+    background-color: rgba(245, 245, 245, 0.95);
     -webkit-backdrop-filter: blur(10px);
     
     box-shadow: -4px 0 8px rgba(0, 0, 0, 0.1);

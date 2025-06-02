@@ -86,6 +86,7 @@ p {
     margin: 4em 0 0;
     background: linear-gradient(75deg, #014fa2, #00458e);
     color: aqua;
+    scroll-margin-top: 4rem;
 }
 
 .hero-content {
@@ -109,7 +110,6 @@ p {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    /* border: #ffff00 1px solid; */
     padding-bottom: 2rem;
 }
 
@@ -171,6 +171,7 @@ p {
     display: flex;
     align-items: center;
     background-color: white;
+    scroll-margin-top: 4rem;
     
     /* border: solid 1px yellow; */
 }
@@ -197,6 +198,24 @@ p {
     align-items: center;
     
     /* border: solid 1px yellow; */
+}
+
+/* SEÇÃO SOBRE ===================================================================================== */
+
+.sc-sobre {
+    background-color: #f6f6f6;
+}
+
+.sc-sobre .container {
+    width: 660px;
+    text-align: justify;
+}
+
+.sc-sobre p {
+    font-size: 1rem;
+    color: var(--cor-cinza-escuro);
+    line-height: 1.5;
+    margin-bottom: 1.5rem;
 }
 
 
@@ -398,6 +417,8 @@ p {
 .div-uniformes h4 {
     text-align: left;
 }
+
+
 /* SEÇÃO CONTATO ===================================================================================== */ 
 
 .container-contato {
@@ -464,6 +485,110 @@ p {
 }
 
 
+/* SEÇÃO FOOTER ===================================================================================== */ 
+
+footer {
+    padding: 2rem 0;
+    background-color: var(--cor-primaria);
+    color: white;
+    font-family: sans-serif;
+}
+
+footer .footer-column p {
+    color: white;
+    margin: 1rem 0 0 0.75rem;
+}
+
+footer h4 {
+    color: var(--cor-destaque);
+    margin-bottom: 1rem;
+}
+
+.footer-grid {
+    max-width: 1200px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 10%;
+    margin: 0 auto;
+}
+
+.footer-column {
+    flex: 1;
+    /* border: #000000 1px solid; */
+}
+
+.footer-column a {
+    display: inline-block;
+    color: var(--texto-padrao);
+    text-decoration: none;
+    margin: 6px 0;
+    transition: color 0.3s;
+}
+
+.footer-column a:hover {
+    color: var(--cor-secundaria);
+}
+
+.footer-buttons {
+    display: flex;
+    max-width: 219px;
+    flex-direction: column;
+}
+
+.footer-buttons a {
+    display: inline-block;
+    padding: 10px 14px;
+    background-color: var(--cor-secundaria);
+    color: var(--texto-padrao);
+    border-radius: 4px;
+    text-decoration: none;
+    font-size: 14px;
+    transition: background-color 0.3s;
+}
+
+.footer-buttons a:hover {
+    background-color: var(--cor-destaque);
+    color: #000;
+}
+
+.footer-bottom {
+    margin: 2rem auto 0;
+    font-size: 0.75rem;
+    color: #ccc;
+    text-align: center;
+}
+
+.footer-bottom p {
+    color: inherit;
+}
+
+/* SEÇÃO 2P ===================================================================================== */ 
+
+.sc-2p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #000;
+    height: 2.5rem;
+}
+
+.sc-2p p {
+    color: #888888;
+    font-size: 0.85rem;
+}
+
+.sc-2p a {
+    display: flex;
+    align-items:baseline;
+}
+
+.sc-2p img {
+    height: 0.85rem;
+    width: auto;
+    margin-right: 0.75rem;
+}
+
 /* BREAKPOINTS ===================================================================================== */ 
 
 @media (max-width: 1200px) {
@@ -490,14 +615,13 @@ p {
     
     .hero-content {
         grid-template-columns: 1fr;
-        gap: 4rem;
+        gap: 2rem;
     }
     
     .hero-text {
         text-align: center;
         padding-top: 1rem;
         padding-bottom: 0;
-
     }
     
     .cta-hero {
@@ -516,6 +640,10 @@ p {
         color: #ffff00;
         border-color: #ffff00;
         transform: none;
+    }
+    
+    .sc-sobre .container {
+        width: 90vw;
     }
     
     .salva-vidas {
@@ -577,5 +705,42 @@ p {
         padding: 5vw;
         margin: 10vw auto;
         border-radius: var(--raio-longo);
+    }
+    
+    footer {
+        background-color: var(--cor-primaria);
+        color: white;
+        font-family: var(--fonte-principal);
+    }
+    
+    .footer-grid {
+        max-width: 80vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        gap: 10vw;
+        margin: 0 auto 2rem;
+    }
+    
+    .footer-bottom {
+        width: 80vw;
+        margin: 0 auto;
+        text-align: left;
+        margin: 2rem auto 4vw;
+    }
+    
+    .sc-2p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #000;
+    height: fit-content;
+}
+    
+    .sc-2p a {
+        margin: 1rem auto 2rem;
+        max-width: 80vw;
+        text-align: center;
     }
 }

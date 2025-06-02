@@ -21,11 +21,13 @@
     
         <!-- DESKTOP -->
         <ul>
-            <li><a href="#"><img class="logo-topo" src="./ASSETS/IDENTITY/DNC-icon.svg" alt="logotipo 2P"></a></li>
-            <li class="hideOnMobile"><a href="./index.html">Home</a></li>
+            <li><a href="./index.html"><img class="logo-topo" src="./ASSETS/IDENTITY/DNC-horizontal.svg" alt="logotipo 2P"></a></li>
+            <li class="hideOnMobile"><a href="#hero">Início</a></li>
+            <li class="hideOnMobile"><a href="#sobre">Sobre</a></li>
+            <li class="hideOnMobile"><a href="#clientes">Clientes</a></li>
             <li class="hideOnMobile"><a href="#salva-vidas">Coletes Salva-Vidas</a></li>
             <li class="hideOnMobile"><a href="#uniformes">Uniformes</a></li>
-            <li class="hideOnMobile"><a href="#contato">Contato</a></li>
+            <li class="hideOnMobile destaque"><a href="#contato">Contato</a></li>
             <li class="hideOnMobile"><a href="https://www.instagram.com/dnc_equipseg/" target="_blank"><img class="icon" src="./ASSETS/ICONS/instagram-blk.svg" aria-label="acessar nosso instagram" alt="botão instagram"></a></li>
             <li class="burger" onclick=showSidebar()><a href="#"><img class="icon" src="./ASSETS/ICONS/burger-black.svg" aria-label="botão abrir menu" alt="botão abrir menu"></a></li>
         </ul>
@@ -33,7 +35,9 @@
         <!-- MOBILE SIDEBAR -->
         <ul class="sidebar">
             <li onclick=hideSidebar()><a><img class="icon" src="./ASSETS/ICONS/X-black.svg" aria-label="botão fechar menu" alt="botão fechar menu"></a></li>
-            <li onclick=hideSidebar()><a href="./index.html">Home</a></li>
+            <li onclick=hideSidebar()><a href="#hero">Início</a></li>
+            <li onclick=hideSidebar()><a href="#sobre">Sobre</a></li>
+            <li onclick=hideSidebar()><a href="#clientes">Clientes</a></li>
             <li onclick=hideSidebar()><a href="#salva-vidas">Coletes Salva-Vidas</a></li>
             <li onclick=hideSidebar()><a href="#uniformes">Uniformes</a></li>
             <li onclick=hideSidebar()><a href="#contato">Contato</a></li>
@@ -45,13 +49,13 @@
     <main>
     
         <!-- HERO-SECTION -->
-        <section class="hero-section" id="hero-section" aria-label="Seção principal de destaque">
+        <section class="hero-section" id="hero" aria-label="Seção principal de destaque">
             <div class="hero-content">
                 <div class="hero-text">
-                    <h1>Coletes salva-vidas e uniformes profissionais na medida da sua necessidade</h1>
-                    <p>Segurança, conforto, alto desempenho e identidade para sua equipe, com padrão de excelência certificado.</p>
+                    <h1>Segurança, conforto e estilo em cada detalhe</h1>
+                    <p>Uniformes profissionais e coletes salva vidas para sua equipe. Identidade e elevação de sua marca com uniformes personalizados.</p>
                     <div class="cta-hero">
-                        <a href="#" class="cta-main">Faça seu pedido</a>
+                        <a href="#" class="cta-main">Solicite seu atendimento</a>
                         <a href="#contato" class="cta-main cta-secondary">Baixe nosso catálogo</a>
                     </div>
                 </div>
@@ -60,6 +64,18 @@
                     <img class="hero-image" src="./ASSETS/IMAGES/hero-uniformes.png" alt="Imagem de coletes salva-vidas e uniformes profissionais">
                 </div>
             </div>
+        </section>
+        
+        <!-- SEÇÃO DE SOBRE -->
+        <section class="section sc-sobre" id="sobre" aria-label="Seção de clientes">
+            <div class="container">
+                <h2>A DNC Uniformes</h2>
+                
+                <p>Fundada em 2004 em Manaus-AM, a DNC INDÚSTRIA iniciou suas atividades como fabricante de coletes salva-vidas para navegação interior, sendo a única empresa do Norte homologada pela Marinha do Brasil.</p>
+                <p>Em 2018, ao identificar uma forte demanda local, a empresa ampliou sua atuação e passou a produzir uniformes profissionais para diversos setores comerciais e industriais.</p>
+                <p>Com produção própria, modelagem exclusiva e matéria-prima de qualidade, a DNC entrega soluções que aliam conforto, durabilidade, sustentabilidade e ótimo custo-benefício — com a qualidade como prioridade.</p>
+
+            </div>        
         </section>
         
         <!-- SEÇÃO DE CLIENTES -->
@@ -91,7 +107,7 @@
                             <h4>Colete Salva-Vidas</h4>
                             <h3>Amazônia Classe III Modelo Canga</h3>
                             <p>Colete salva-vidas homologado pela Marinha do Brasil, nº 211.004/2016, destinado ao uso em águas abrigadas, como rios, lagos e represas.</p>
-                            <a href="#" class="cta-main cta-produtos">Faça seu pedido</a>
+                            <a href="#" class="cta-main cta-produtos">Saiba mais...</a>
                         </div>
                     </div>
                     
@@ -101,7 +117,7 @@
                             <h4>Colete Salva-Vidas</h4>
                             <h3>Equipamento Auxiliar de Flutuação</h3>
                             <p>Indicado para embarcações em áreas de águas calmas e abrigadas, que não exigem equipamentos homologados pela Marinha.</p>
-                            <a href="#" class="cta-main cta-produtos">Faça seu pedido</a>
+                            <a href="#" class="cta-main cta-produtos">Saiba mais...</a>
                         </div>
                     </div>
                 </Div>
@@ -120,7 +136,7 @@
                     </div>
                     <div class="card-diferencial">
                         <img src="./ASSETS/ICONS/dif-marinha.png" alt="logo cliente BYD">
-                        <h3>homologado pela Marinha do Brasil</h3>
+                        <h3>Homologado pela Marinha do Brasil</h3>
                     </div>
                     <div class="card-diferencial">
                         <img src="./ASSETS/ICONS/dif-atendimento.png" alt="logo cliente BYD">
@@ -142,6 +158,10 @@
                         <img src="./ASSETS/ICONS/dif-tecidos.png" alt="logo cliente BYD">
                         <h3>Tecidos </br> premium</h3>
                     </div>
+                    <div class="card-diferencial">
+                        <img src="./ASSETS/ICONS/dif-fornecimento.png" alt="logo cliente BYD">
+                        <h3>Entrega prática e organizada</h3>
+                    </div>
                     
                 </Div>
             </div>
@@ -158,7 +178,7 @@
                         <div class="card-descricao">
                             <h3>Linha Administrativa</h3>
                             <p>Sofisticação que valoriza sua marca no escritório.</p>
-                            <a href="#" class="cta-main cta-produtos">Faça seu pedido</a>
+                            <a href="#" class="cta-main cta-produtos">Saiba mais...</a>
                         </div>
                     </div>
                     
@@ -167,7 +187,7 @@
                         <div class="card-descricao">
                             <h3>Linha Hospitalar</h3>
                             <p>Conforto e proteção para cuidar de vidas.</p>
-                            <a href="#" class="cta-main cta-produtos">Faça seu pedido</a>
+                            <a href="#" class="cta-main cta-produtos">Saiba mais...</a>
                         </div>
                     </div>
                     
@@ -176,7 +196,7 @@
                         <div class="card-descricao">
                             <h3>Linha Operacional</h3>
                             <p>Força e segurança para quem atua na linha de frente.</p>
-                            <a href="#" class="cta-main cta-produtos">Faça seu pedido</a>
+                            <a href="#" class="cta-main cta-produtos">Saiba mais...</a>
                         </div>
                     </div>
                     
@@ -185,16 +205,16 @@
                         <div class="card-descricao">
                             <h3>Antiestáticos</h3>
                             <p>Tecnologia e proteção para ambientes sensíveis.</p>
-                            <a href="#" class="cta-main cta-produtos">Faça seu pedido</a>
+                            <a href="#" class="cta-main cta-produtos">Saiba mais...</a>
                         </div>
                     </div>
                     
                     <div class="card-uniforme">
                         <img src="./ASSETS/IMAGES/uni-servicos.png" alt="Colete salva-vidas Canga Classe III">
                         <div class="card-descricao">
-                            <h3>Linha de Serviços</h3>
+                            <h3>Linha Service</h3>
                             <p>Estilo e praticidade para quem atende com excelência.</p>
-                            <a href="#" class="cta-main cta-produtos">Faça seu pedido</a>
+                            <a href="#" class="cta-main cta-produtos">Saiba mais...</a>
                         </div>
                     </div>
                     
@@ -205,7 +225,7 @@
                                 <h3>Polos e T-shirts</h3>
                                 <p>Básicos que vestem bem e reforçam sua identidade.</p>
                             </div>
-                            <a href="#" class="cta-main cta-produtos">Faça seu pedido</a>
+                            <a href="#" class="cta-main cta-produtos">Saiba mais...</a>
                         </div>
                     </div>
                     
@@ -244,7 +264,50 @@
                 </div>
             </div>
         </section>
+        
+        <!-- FOOTER -->
+        <footer>
+            <div class="footer-grid">
+                <div class="footer-column">
+                    <h4>Endereço</h4>
+                    <div class="footer-buttons">
+                        <a href="https://www.google.com/maps/search/?api=1&query=Av.+Nathan+Xavier,+355,+Manaus" target="_blank">Abrir no Google Maps</a>
+                        <a href="https://waze.com/ul?ll=-3.037456,-59.958222&navigate=yes" target="_blank">Abrir no Waze</a>
+                    </div>
+                    <p>Av. Nathan Xavier, 355<br>Novo Aleixo – Manaus – AM<br>CEP: 69098-125</p>
+                </div>
 
+                <div class="footer-column">
+                    <h4>WhatsApp Comercial</h4>
+                    <div class="footer-buttons">
+                        <a href="https://wa.me/5592991593162" target="_blank">Comercial 1</a>
+                        <a href="https://wa.me/5592999966651" target="_blank">Comercial 2</a>
+                        <a href="https://wa.me/5592999728357" target="_blank">Comercial 3</a>
+                    </div>
+                </div>
+
+                <div class="footer-column">
+                    <h4>Contato por E-mail</h4>
+                    <div class="footer-buttons">
+                        <a href="mailto:vendas@dnc-equipseg.ind.br">vendas@dnc-equipseg.ind.br</a>
+                        <a href="mailto:vendas1@dnc-equipseg.ind.br">vendas1@dnc-equipseg.ind.br</a>
+                        <a href="mailto:dyana@dnc-equipseg.ind.br">dyana@dnc-equipseg.ind.br</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>© 2025 DNC INDÚSTRIA. Todos os direitos reservados.</p>
+            </div>
+        </footer>
+
+        <!-- SEÇÃO 2P -->      
+        <section class="sc-2p">
+                <a href="http://www.2pnaweb.com" target="_blank">
+                    <img src="./ASSETS/IMAGES/2P-logo-icon.svg" alt="logotipo 2P comunicaçã">
+                    <p>Desenvolvido por 2P Comunicação.&nbsp<em>(2025)</em></p>
+                </a>
+        </section>
         
         <!-- BOTÃO WHATSAPP -->
         <a
