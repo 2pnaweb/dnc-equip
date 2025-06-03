@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 /* NAVBAR DESIGN */
 
 nav {

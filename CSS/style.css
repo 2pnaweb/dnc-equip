@@ -5,6 +5,10 @@
     font-style: normal;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 
 /* VARIÁVEIS CSS ===================================================================================== */
 
@@ -39,7 +43,6 @@ body {
     font-family: var(--fonte-principal);
     font-weight: 400;
 }
-
 
 a {
     color: inherit;
@@ -211,13 +214,32 @@ p {
     text-align: justify;
 }
 
+.video-container {
+  position: relative;
+  width: 100%;
+  padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
+  height: 0;
+  margin-bottom: 2rem;
+  overflow: hidden;
+  border-radius: 0.5rem; /* opcional, para bordas arredondadas */
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* opcional, para visual aprimorado */
+}
+
+.video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
 .sc-sobre p {
     font-size: 1rem;
     color: var(--cor-cinza-escuro);
     line-height: 1.5;
     margin-bottom: 1.5rem;
 }
-
 
 /* SEÇÃO CLIENTES ===================================================================================== */
 
@@ -566,7 +588,7 @@ footer h4 {
 /* SEÇÃO 2P ===================================================================================== */ 
 
 .sc-2p {
-    display: flex;
+    display: none;
     justify-content: center;
     align-items: center;
     background-color: #000;
@@ -730,17 +752,8 @@ footer h4 {
         margin: 2rem auto 4vw;
     }
     
-    .sc-2p {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #000;
-    height: fit-content;
 }
-    
-    .sc-2p a {
-        margin: 1rem auto 2rem;
-        max-width: 80vw;
-        text-align: center;
-    }
+
+html:focus-within {
+  scroll-behavior: smooth;
 }

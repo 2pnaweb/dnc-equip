@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Especialistas na fabricação de coletes salva-vidas homologados e uniformes profissionais personalizados para empresas de todo o Brasil.">
     
     <link rel="stylesheet" href="./CSS/style.css">
     <link rel="stylesheet" href="./CSS/navbar.css">   
@@ -29,7 +30,7 @@
             <li class="hideOnMobile"><a href="#uniformes">Uniformes</a></li>
             <li class="hideOnMobile destaque"><a href="#contato">Contato</a></li>
             <li class="hideOnMobile"><a href="https://www.instagram.com/dnc_equipseg/" target="_blank"><img class="icon" src="./ASSETS/ICONS/instagram-blk.svg" aria-label="acessar nosso instagram" alt="botão instagram"></a></li>
-            <li class="burger" onclick=showSidebar()><a href="#"><img class="icon" src="./ASSETS/ICONS/burger-black.svg" aria-label="botão abrir menu" alt="botão abrir menu"></a></li>
+            <li class="burger" onclick=showSidebar()><a><img class="icon" src="./ASSETS/ICONS/burger-black.svg" aria-label="botão abrir menu" alt="botão abrir menu"></a></li>
         </ul>
         
         <!-- MOBILE SIDEBAR -->
@@ -55,7 +56,13 @@
                     <h1>Segurança, conforto e estilo em cada detalhe</h1>
                     <p>Uniformes profissionais e coletes salva vidas para sua equipe. Identidade e elevação de sua marca com uniformes personalizados.</p>
                     <div class="cta-hero">
-                        <a href="#" class="cta-main">Solicite seu atendimento</a>
+                        <a
+                            class="cta-main"
+                            href="https://wa.me/5592991593162?text=Visitei%20o%20site%20e%20queria%20mais%20informa%C3%A7%C3%B5es..."
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            aria-label="Fale conosco no WhatsApp"
+                        >Solicite seu atendimento</a>
                         <a href="#contato" class="cta-main cta-secondary">Baixe nosso catálogo</a>
                     </div>
                 </div>
@@ -71,27 +78,17 @@
             <div class="container">
                 <h2>A DNC Uniformes</h2>
                 
+                <div class="video-container">
+                    <iframe src="https://www.youtube.com/embed/LDq--5NQCPc" 
+                      title="Institucional DNC Uniformes" frameborder="0"
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                      allowfullscreen></iframe>
+                </div>
+                
                 <p>Fundada em 2004 em Manaus-AM, a DNC INDÚSTRIA iniciou suas atividades como fabricante de coletes salva-vidas para navegação interior, sendo a única empresa do Norte homologada pela Marinha do Brasil.</p>
                 <p>Em 2018, ao identificar uma forte demanda local, a empresa ampliou sua atuação e passou a produzir uniformes profissionais para diversos setores comerciais e industriais.</p>
                 <p>Com produção própria, modelagem exclusiva e matéria-prima de qualidade, a DNC entrega soluções que aliam conforto, durabilidade, sustentabilidade e ótimo custo-benefício — com a qualidade como prioridade.</p>
 
-            </div>        
-        </section>
-        
-        <!-- SEÇÃO DE CLIENTES -->
-        <section class="section" id="clientes" aria-label="Seção de clientes">
-            <div class="container no-padding">
-                <h2>Nossos Principais Clientes</h2>
-                
-                <Div class="clientes">
-                    <img src="./ASSETS/CLIENTES/1-byd.png" alt="logo cliente BYD">
-                    <img src="./ASSETS/CLIENTES/2-gree.png" alt="logo cliente GREE">
-                    <img src="./ASSETS/CLIENTES/3-kawasaki.png" alt="logo cliente KAWASAKI">
-                    <img src="./ASSETS/CLIENTES/4-tpv.png" alt="logo cliente TPV">
-                    <img src="./ASSETS/CLIENTES/5-grafisa.png" alt="logo cliente GRAFISA">
-                    <img src="./ASSETS/CLIENTES/6-knauf.png" alt="logo cliente KNAUF INDUSTRIES">
-                    <img src="./ASSETS/CLIENTES/7-verde.png" alt="logo cliente VERDE BRASIL">
-                </Div>
             </div>        
         </section>
         
@@ -234,6 +231,23 @@
             </div>
         </section>
         
+        <!-- SEÇÃO DE CLIENTES -->
+        <section class="section" id="clientes" aria-label="Seção de clientes">
+            <div class="container no-padding">
+                <h2>Nossos Principais Clientes</h2>
+                
+                <Div class="clientes">
+                    <img src="./ASSETS/CLIENTES/1-byd.png" alt="logo cliente BYD">
+                    <img src="./ASSETS/CLIENTES/2-gree.png" alt="logo cliente GREE">
+                    <img src="./ASSETS/CLIENTES/3-kawasaki.png" alt="logo cliente KAWASAKI">
+                    <img src="./ASSETS/CLIENTES/4-tpv.png" alt="logo cliente TPV">
+                    <img src="./ASSETS/CLIENTES/5-grafisa.png" alt="logo cliente GRAFISA">
+                    <img src="./ASSETS/CLIENTES/6-knauf.png" alt="logo cliente KNAUF INDUSTRIES">
+                    <img src="./ASSETS/CLIENTES/7-verde.png" alt="logo cliente VERDE BRASIL">
+                </Div>
+            </div>        
+        </section>
+        
         <!-- SEÇÃO CONTATO -->
         <section class="section catalog-form" id="contato" aria-label="Seção de contato">
             <div class="container container-contato">
@@ -311,7 +325,7 @@
         
         <!-- BOTÃO WHATSAPP -->
         <a
-        href="https://wa.me/5599999999999?text=Olá!%20Gostaria%20de%20saber%20mais..."
+        href="https://wa.me/5592991593162?text=Visitei%20o%20site%20e%20queria%20mais%20informa%C3%A7%C3%B5es..."
         class="whatsapp-float"
         target="_blank"
         rel="noopener noreferrer"
@@ -336,68 +350,81 @@
         // Formulário de download do catálogo
         
         const form = document.getElementById('downloadForm');
-  const modal = document.getElementById('modal');
+        const modal = document.getElementById('modal');
 
-  form.addEventListener('submit', function (e) {
-    e.preventDefault();
+        form.addEventListener('submit', function (e) {
+        e.preventDefault();
 
-    // Resetar erros anteriores
-    const inputs = form.querySelectorAll('input');
-    inputs.forEach(input => input.classList.remove('error'));
+        // Resetar erros anteriores
+        const inputs = form.querySelectorAll('input');
+        inputs.forEach(input => input.classList.remove('error'));
 
-    const nome = document.getElementById('nome');
-    const whatsapp = document.getElementById('whatsapp');
-    const email = document.getElementById('email');
+        const nome = document.getElementById('nome');
+        const whatsapp = document.getElementById('whatsapp');
+        const email = document.getElementById('email');
 
-    let valid = true;
+        let valid = true;
 
-    // Validação nome
-    if (nome.value.trim() === '') {
-      nome.classList.add('error');
-      nome.focus();
-      valid = false;
-      return;
-    }
+        // Validação nome
+        if (nome.value.trim() === '') {
+          nome.classList.add('error');
+          nome.focus();
+          valid = false;
+          return;
+        }
 
-    // Validação whatsapp (ex: (11) 91234-5678)
-    const telPattern = /^\(\d{2}\)\s9\d{4}-\d{4}$/;
-    if (!telPattern.test(whatsapp.value)) {
-      whatsapp.classList.add('error');
-      whatsapp.focus();
-      valid = false;
-      return;
-    }
+        // Validação whatsapp (ex: (11) 91234-5678)
+        const telPattern = /^\(\d{2}\)\s9\d{4}-\d{4}$/;
+        if (!telPattern.test(whatsapp.value)) {
+          whatsapp.classList.add('error');
+          whatsapp.focus();
+          valid = false;
+          return;
+        }
 
-    // Validação email simples
-    const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-    if (!emailPattern.test(email.value)) {
-      email.classList.add('error');
-      email.focus();
-      valid = false;
-      return;
-    }
+        // Validação email simples
+        const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        if (!emailPattern.test(email.value)) {
+          email.classList.add('error');
+          email.focus();
+          valid = false;
+          return;
+        }
 
-    // Se tudo estiver válido
-    modal.style.display = 'flex';
-    setTimeout(() => {
-      modal.style.display = 'none';
-      window.open('./FILES/DNC-catalogo.pdf', '_blank');
-      form.reset();
-    }, 2500);
-  });
+        // Se tudo estiver válido
+        modal.style.display = 'flex';
+        setTimeout(() => {
+          modal.style.display = 'none';
+          window.open('./FILES/DNC-catalogo.pdf', '_blank');
+          form.reset();
+        }, 2500);
+      });
 
-  // Máscara para WhatsApp
-  document.getElementById('whatsapp').addEventListener('input', function (e) {
-    let x = e.target.value.replace(/\D/g, '').slice(0, 11);
-    if (x.length >= 11) {
-      e.target.value = `(${x.slice(0, 2)}) 9${x.slice(3, 7)}-${x.slice(7, 11)}`;
-    } else if (x.length > 6) {
-      e.target.value = `(${x.slice(0, 2)}) 9${x.slice(3, x.length)}`;
-    } else if (x.length > 2) {
-      e.target.value = `(${x.slice(0, 2)}) ${x.slice(2)}`;
-    } else {
-      e.target.value = x;
-    }
+        // Máscara para WhatsApp
+        document.getElementById('whatsapp').addEventListener('input', function (e) {
+        let x = e.target.value.replace(/\D/g, '').slice(0, 11);
+        if (x.length >= 11) {
+          e.target.value = `(${x.slice(0, 2)}) 9${x.slice(3, 7)}-${x.slice(7, 11)}`;
+        } else if (x.length > 6) {
+          e.target.value = `(${x.slice(0, 2)}) 9${x.slice(3, x.length)}`;
+        } else if (x.length > 2) {
+          e.target.value = `(${x.slice(0, 2)}) ${x.slice(2)}`;
+        } else {
+          e.target.value = x;
+        }
+      });
+      
+        //   scroll-behavior smooth
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+      const targetId = this.getAttribute('href');
+      const target = document.querySelector(targetId);
+
+      if (target) {
+        e.preventDefault();
+        target.scrollIntoView({ behavior: 'smooth' });
+      }
+    });
   });
     </script>
     
